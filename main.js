@@ -23,7 +23,7 @@ function loadImg(){
 		});
 		canvas.add(hole_obj);
 	})
-	newImage();
+	new_image();
 }
 
 function new_image()
