@@ -14,7 +14,7 @@ block_image_height = 5;
 function loadImg(){
 	// Escreva o código para enviar a imagem da bola de golfe ao canvas
 	fabric.Image.fromURL("golf-h.png", function(img){
-		hole_obj = Img;
+		hole_obj = img;
 		hole_obj.scaleToWidth(50);
 		hole_obj.scaleToHeight(50);
 		hole_obj.set({
@@ -26,11 +26,11 @@ function loadImg(){
 	newImage();
 }
 
-function newImage()
+function new_image()
 {
 	// Escreva o código para enviar a imagem da bola ao canvas
 	fabric.Image.fromURL("ball.png", function(img){
-		ball_obj = Img;
+		ball_obj = img;
 		ball_obj.scaleToWidth(50);
 		ball_obj.scaleToHeight(50);
 		ball_obj.set({
@@ -108,7 +108,7 @@ function myKeyDown(e)
 
 	function left()
 	{
-		if(ball_X >5)
+		if(ball_x >5)
 		
 			// Escreva o código para mover a bola para a esquerda.
 			ball_x = ball_x - block_image_height;
@@ -121,7 +121,7 @@ function myKeyDown(e)
 
 	function right()
 	{
-		if(ball_X <=1050)
+		if(ball_x <=1050)
 		ball_x = ball_x + block_image_height;
 			console.log("Altura da imagem do bloco t =" + block_image_height)
 			console.log("Quando a tecla direcional baixo é pressionado, X -" + ball_x + ",Y -"+ball_y);
